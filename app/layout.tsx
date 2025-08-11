@@ -1,3 +1,4 @@
+import "../styles/global.css";
 import { Metadata } from 'next'
 import Navigation from '../components/navigation'
 
@@ -11,7 +12,6 @@ export const metadata: Metadata = {
 }
 
 
-
 export default function RootLayout({
   children,
 }: {
@@ -22,7 +22,6 @@ export default function RootLayout({
       <body>
         <Navigation />
         {children}
-        Root layout!
         </body>
     </html>
   )
